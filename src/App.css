@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #21474D;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.optionsPanel{
+  width: 500px;
+  height: 250px;
+  background-color: #47767E;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.options{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.options .label{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+.options input{
+  font-size: 15px;
+  width: 80%;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+}
+
+.paint-button{
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.paint-button button{
+  background-color: #21474D;  
+  color: black;  
+  font-size: 25px;  
+  height: 100%;
+  width: 200px;  
+  border: 1px solid black;
+}
+
+.paint-button button:hover{
+  cursor: pointer;
+  background-color: white;  
+  color: #0BBBDB;
+  border: 1px solid white;
+}
+
+.button{
+  background-color: #47767E;  
+  color: black;  
+  font-size: 25px;  
+  margin-top: 40px;
+  margin-left: 500px;
+  width: 20%;  
+}
+
+
+.button:hover{
+  cursor: pointer;
+  background-color: white;  
+  color: #0BBBDB;
+}
+
+.painting-panel{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.pixels{
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.picker{
+  margin-top: 20px;
+  margin-left: 500px;
+}
+
+.row {
+  display: flex;
+  width: fit-content;
+}
+
+.pixel{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.pixel:hover{
+  cursor: pointer;
 }
